@@ -11,7 +11,7 @@ def create_app():
     swagger = Swagger(app)
 
     app.config['SWAGGER'] = {
-        'title': 'WeMeta Success Metrics Service',
+        'title': 'Python Flask API',
     }
 
     # Initialize Config
