@@ -1,8 +1,8 @@
+from flasgger import Swagger
 from flask import Flask
 from flask_restful import Api
 
 from api.controllers.health_check import HealthCheck
-from flasgger import Swagger
 
 
 def create_app():
@@ -10,14 +10,14 @@ def create_app():
     api = Api(app)
     swagger = Swagger(app)
 
-    app.config['SWAGGER'] = {
-        'title': 'Python Flask API',
+    app.config["SWAGGER"] = {
+        "title": "Python Flask API",
     }
 
     # Initialize Config
-    app.config.from_pyfile('../../config.py')
+    app.config.from_pyfile("../../config.py")
 
     # Register Resources
-    api.add_resource(HealthCheck, '/healthcheck')
+    api.add_resource(HealthCheck, "/healthcheck")
 
     return app
