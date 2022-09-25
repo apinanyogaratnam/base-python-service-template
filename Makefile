@@ -1,0 +1,2 @@
+shell:
+	pipenv shell
