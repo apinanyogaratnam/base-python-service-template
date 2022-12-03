@@ -1,4 +1,5 @@
 from flask_restful import Resource
+import os
 
 
 class Home(Resource):
@@ -6,4 +7,4 @@ class Home(Resource):
         pass
 
     def get(self: "Home") -> dict:
-        return {"status": "OK"}
+        return {"status": "OK", "pid": os.getpid()}
