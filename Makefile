@@ -7,3 +7,6 @@ format:
 
 start:
 	python main.py
+
+install:
+	pipenv install
