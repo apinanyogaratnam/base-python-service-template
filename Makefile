@@ -13,6 +13,7 @@ start:
 	python main.py
 
 install:
+	pip install pipenv==2022.11.30
 	pipenv install
 
 build:
