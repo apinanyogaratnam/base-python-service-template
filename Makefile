@@ -18,3 +18,6 @@ install:
 
 build:
 	docker build -t ${IMAGE_NAME} .
+
+run:
+	docker run -p 8001:8001 ${IMAGE_NAME}
