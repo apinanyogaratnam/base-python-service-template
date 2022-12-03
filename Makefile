@@ -23,4 +23,4 @@ run:
 	docker run -p 8001:8001 ${IMAGE_NAME}
 
 up:
-	docker-compose up --scale base-python-service-template=10 --remove-orphans -d
+	docker-compose up --scale base-python-service-template=5 --remove-orphans -d
