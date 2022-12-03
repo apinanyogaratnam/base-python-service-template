@@ -7,7 +7,7 @@ COPY Pipfile Pipfile.lock ./
 COPY Makefile /app/Makefile
 
 # install make
-RUN apk add --no-cache make
+RUN apk add make
 
 # install dependencies
 RUN make install
