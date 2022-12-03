@@ -1,5 +1,5 @@
-shell:
-	pipenv shell
+lint:
+	flake8 .
 
 format:
 	black .
