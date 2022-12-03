@@ -24,3 +24,6 @@ run:
 
 up:
 	docker-compose up --scale base-python-service-template=5 --remove-orphans -d --build
+
+down:
+	docker-compose down
