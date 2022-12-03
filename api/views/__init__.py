@@ -2,7 +2,7 @@ from flasgger import Swagger
 from flask import Flask
 from flask_restful import Api
 
-from api.controllers.health_check import HealthCheck
+from api.controllers import HealthCheck, Home
 
 
 def create_app():
@@ -19,5 +19,6 @@ def create_app():
 
     # Register Resources
     api.add_resource(HealthCheck, "/healthcheck")
+    api.add_resource(Home, "/")
 
     return app
