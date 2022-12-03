@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  base-python-service-template:
+    build: .
+    ports:
+      - "1001-1010:8001"
+    volumes:
+      - .:/app
