@@ -1,6 +1,6 @@
-# Bitcoin Unconfirmed Transactions
+# Base Python Service Template
 
-A server to get all unconfirmed bitcoin transactions
+A boilerplate python server
 
 ## Table of Contents
 
