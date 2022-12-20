@@ -5,6 +5,11 @@ services:
     build: .
     ports:
       - "8001"
+    environment:
+      - DATABASE_USER=postgres
+      - DATABASE_PASSWORD=postgres
+      - DATABASE_NAME=postgres
+      - DATABASE_HOST=host.docker.internal
 
   nginx:
     image: nginx:latest
@@ -14,3 +19,14 @@ services:
       - base-python-service-template
     ports:
       - "4000:4000"
+
+  postgresql:
+    image: docker.io/bitnami/postgresql:14
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRESQL_USERNAME=postgres
+      - POSTGRESQL_PASSWORD=postgres
+      - POSTGRESQL_DATABASE=postgres
+    volumes:
+      - 'postgresql_data:/bitnami/postgresql'
