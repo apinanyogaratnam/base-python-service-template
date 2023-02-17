@@ -1,4 +1,4 @@
-FROM python:3.10-alpine3.17
+FROM python:3.10
 
 WORKDIR /app
 
@@ -7,7 +7,7 @@ COPY Pipfile Pipfile.lock ./
 COPY Makefile /app/Makefile
 
 # install make
-RUN apk add make
+RUN apt-get install make
 
 # install dependencies
 RUN make install
