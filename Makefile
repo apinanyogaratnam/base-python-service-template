@@ -6,8 +6,7 @@ lint:
 	flake8 .
 
 format:
-	black .
-	isort .
+	ruff --fix .
 
 start:
 	python main.py
