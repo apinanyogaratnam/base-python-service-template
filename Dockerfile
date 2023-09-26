@@ -7,7 +7,7 @@ COPY Pipfile Pipfile.lock ./
 COPY Makefile /app/Makefile
 
 # install make
-RUN apt-get install make
+RUN apt install make && pip install pipenv==2022.11.30 && pipenv install --system --deploy
 
 # install dependencies
 RUN make install
@@ -15,4 +15,4 @@ RUN make install
 # copy the rest of the files
 COPY . .
 
-CMD ["pipenv", "run", "python", "main.py"]
+CMD ["python", "main.py"]

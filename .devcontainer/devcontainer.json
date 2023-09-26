@@ -1,0 +1,22 @@
+{
+    "name": "<name goes here> Service",
+    "dockerComposeFile": "../docker-compose-dev.yml",
+    "service": "web",
+    "workspaceFolder": "/app",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-python.python",
+          "GitHub.copilot",
+          "GitHub.copilot-chat",
+          "mutantdino.resourcemonitor",
+          "streetsidesoftware.code-spell-checker",
+          "eamodio.gitlens",
+          "sourcery.sourcery",
+          "GitHub.copilot-labs"
+      ]
+      }
+    },
+    // "postCreateCommand": "apt update && apt install -y awscli && apt install make && make install-dev",
+    "shutdownAction": "stopCompose"
+  }
