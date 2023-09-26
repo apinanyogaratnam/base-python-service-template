@@ -1,5 +1,7 @@
-from flask_restful import Resource
 import os
+
+from flask_restful import Resource
+
 from api.types import BaseAPI
 
 
