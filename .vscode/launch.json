@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flask: Run Application",
+            "type": "python",
+            "request": "launch",
+            "module": "python",
+            "env": {
+                "FLASK_APP": "application.py",
+                "FLASK_DEBUG": "1",
+                "FLASK_RUN_PORT": "8000"
+            },
+            "args": [
+                "main.py"
+            ],
+            "jinja": true
+        }
+    ]
+}

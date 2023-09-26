@@ -1,5 +1,8 @@
 # Base Python Service Template
 
+- TODO: setup base api class with access to postgres
+- TODO: setup ruff 
+
 A boilerplate python server
 
 ## Table of Contents

@@ -3,5 +3,6 @@
         "getpid",
         "healthcheck",
         "pyfile"
-    ]
+    ],
+    "python.defaultInterpreterPath": "/usr/bin/python",
 }
