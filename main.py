@@ -1,6 +1,10 @@
 from api.views import create_app
+import os
 
 app = create_app()
 
 if __name__ == "__main__":
-    app.run('0.0.0.0', 8001, debug=True)
+    host = os.environ.get('FLASK_RUN_HOST')
+    port = os.environ.get('FLASK_RUN_PORT')
+    debug = os.environ.get('FLASK_DEBUG')
+    app.run(host, port, debug=bool(debug))
